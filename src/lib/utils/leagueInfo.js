@@ -30,6 +30,7 @@ https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#ii-adding
 export const managers = [
     {
       "managerID": "956874617300267008",
+      "roster": 6,
       "name": "Nick",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -52,6 +53,7 @@ export const managers = [
     },
     {
       "managerID": "1131660920612098048",
+      "roster": 10,
       "name": "Rob",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Lubbock, TX", // (optional)
@@ -74,6 +76,7 @@ export const managers = [
     },
     {
       "managerID": "1262563410487279616",
+      "roster": 8,
       "name": "Cole",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Corpus Christi, TX", // (optional)
@@ -96,6 +99,7 @@ export const managers = [
     },
     {
       "managerID": "1203204156400095232",
+      "roster": 1,
       "name": "Matt",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -118,6 +122,7 @@ export const managers = [
     },
     {
       "mangerID": "1157154820512559104",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 4,
       "name": "Gary",
       "tookOver": 2023, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -140,6 +145,7 @@ export const managers = [
     },
     {
       "mangerID": "1003756796512657408",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 7,
       "name": "David",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Lubbock, TX", // (optional)
@@ -162,6 +168,7 @@ export const managers = [
     },
     {
       "mangerID": "1152379435111559168",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 2,
       "name": "Austin",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -184,6 +191,7 @@ export const managers = [
     },
     {
       "mangerID": "1261458983793721344",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 3,
       "name": "Reggie",
       "tookOver": 2023, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -206,6 +214,7 @@ export const managers = [
     },
     {
       "mangerID": "1151620001342963712",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 12,
       "name": "Savian",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -228,6 +237,7 @@ export const managers = [
     },
     {
       "mangerID": "998657206969114624",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 5,
       "name": "Matthew",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -250,6 +260,7 @@ export const managers = [
     },
     {
       "mangerID": "1009714825649455104",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 11,
       "name": "Jacob",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -272,6 +283,7 @@ export const managers = [
     },
     {
       "mangerID": "1144493657689837568",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 9,
       "name": "Fernando",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
