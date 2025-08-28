@@ -169,39 +169,71 @@
 	         extraInfo: seasonLongRecord.fpts,
 	         former,
 	       });
-     }
-   }
+	     }
+	   }
+	
+	   // Second loop for the longer array (leagueWeekHighs)
+	   for (let i = 0; i < records.regularSeasonData.leagueWeekHighs.length; i++) {
+	     const leagueWeekRecord = records.regularSeasonData.leagueWeekHighs[i];
+	     if (
+	       checkIfDeserves(
+	         leagueWeekRecord.rosterID,
+	         cRosterID,
+	         leagueWeekRecord.year
+	       )
+	     ) {
+	       const former = tookOver && tookOver > leagueWeekRecord.year;
+	       if (former) {
+	         formerGlobal = true;
+	       }
+	       displayAwards.push({
+	         award: i + 1,
+	         icon: "/awards/" + (i < 3 ? `record-${i + 1}` : "generic") + ".png",
+	         type: "All-Time Single Week Record",
+	         originalName: getTeamNameFromTeamManagers(
+	           leagueTeamManagers,
+	           cRosterID,
+	           leagueWeekRecord.year
+	         ),
+	         year: leagueWeekRecord.year,
+	         week: leagueWeekRecord.week,
+	         extraInfo: leagueWeekRecord.fpts,
+	         former,
+	       });
+	     }
+	   }
+	   for (const yearRecords of records.regularSeasonData.seasonWeekRecords) {
+	     for (let i = 0; i < 3; i++) {
+	       const seasonPointsRecord = yearRecords.seasonPointsHighs[i];
+	       if (
+	         checkIfDeserves(
+	           seasonPointsRecord.rosterID,
+	           cRosterID,
+	           yearRecords.year
+	         )
+	       ) {
+	         const former = tookOver && tookOver > yearRecords.year;
+	         if (former) {
+	           formerGlobal = true;
+	         }
+	         displayAwards.push({
+	           award: i + 1,
+	           icon: "/awards/" + (i < 3 ? `record-${i + 1}` : "generic") + ".png",
+	           type: `${yearRecords.year} Single Week Record`,
+	           originalName: getTeamNameFromTeamManagers(
+	             leagueTeamManagers,
+	             cRosterID,
+	             seasonPointsRecord.year
+	           ),
+	           year: null,
+	           week: seasonPointsRecord.week,
+	           extraInfo: seasonPointsRecord.fpts,
+	           former,
+	         });
+	       }
+	     }
+	   }
 
-   // Second loop for the longer array (leagueWeekHighs)
-   for (let i = 0; i < records.regularSeasonData.leagueWeekHighs.length; i++) {
-     const leagueWeekRecord = records.regularSeasonData.leagueWeekHighs[i];
-     if (
-       checkIfDeserves(
-         leagueWeekRecord.rosterID,
-         cRosterID,
-         leagueWeekRecord.year
-       )
-     ) {
-       const former = tookOver && tookOver > leagueWeekRecord.year;
-       if (former) {
-         formerGlobal = true;
-       }
-       displayAwards.push({
-         award: i + 1,
-         icon: "/awards/" + (i < 3 ? `record-${i + 1}` : "generic") + ".png",
-         type: "All-Time Single Week Record",
-         originalName: getTeamNameFromTeamManagers(
-           leagueTeamManagers,
-           cRosterID,
-           leagueWeekRecord.year
-         ),
-         year: leagueWeekRecord.year,
-         week: leagueWeekRecord.week,
-         extraInfo: leagueWeekRecord.fpts,
-         former,
-       });
-     }
-   }
    for (const yearRecords of records.regularSeasonData.seasonWeekRecords) {
      for (let i = 0; i < 3; i++) {
        const seasonPointsRecord = yearRecords.seasonPointsHighs[i];
