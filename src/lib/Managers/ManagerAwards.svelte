@@ -168,7 +168,7 @@
 	         year: seasonLongRecord.year,
 	         extraInfo: seasonLongRecord.fpts,
 	         former,
-	       });
+	       })
 	     }
 	   }
 	
