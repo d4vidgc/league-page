@@ -9,7 +9,8 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 export const homepageText = `
    <p>This is the home webpage for THE League. Hosted by the Sleeper App<p>
    <p>Here you can find our current/past league history that will be updated as we continue to play on Sleeper<p>
-   <p>Commisioner: Matthew, Dues Collector: Matt<p>
+   <p>Commisioner: Matthew<p> 
+   <p>Dues Collector: Matt<p>
    <p>Past Champions List: 2022 Matthew, 2023 David, 2024 Reggie<p>
    <p>Current Loser: Gary :(<p>
    <p>Features to be added: League Constitution, Blog posts<p>
@@ -29,8 +30,8 @@ https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#ii-adding
 
 export const managers = [
     {
-      "managerID": "956874617300267008",
-      //"roster": 6,
+      //"managerID": "956874617300267008",
+      "roster": 6,
       "name": "Nick",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -52,8 +53,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "managerID": "1131660920612098048",
-      //"roster": 10,
+      //"managerID": "1131660920612098048",
+      "roster": 10,
       "name": "Rob",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Lubbock, TX", // (optional)
@@ -75,8 +76,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "managerID": "1262563410487279616",
-      //"roster": 8,
+      //"managerID": "1262563410487279616",
+      "roster": 8,
       "name": "Cole",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Corpus Christi, TX", // (optional)
@@ -98,8 +99,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "managerID": "1203204156400095232",
-      //"roster": 1,
+      //"managerID": "1203204156400095232",
+      "roster": 1,
       "name": "Matt",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -121,8 +122,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "mangerID": "1151620001342963712",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 12,
+      //"mangerID": "1151620001342963712",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 12,
       "name": "Savian",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -144,8 +145,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "mangerID": "1157154820512559104",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 4,
+      //"mangerID": "1157154820512559104",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 4,
       "name": "Gary",
       "tookOver": 2023, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -167,8 +168,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "mangerID": "1003756796512657408",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 7,
+      //"mangerID": "1003756796512657408",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 7,
       "name": "David",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Lubbock, TX", // (optional)
@@ -190,8 +191,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "mangerID": "1152379435111559168",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 2,
+      //"mangerID": "1152379435111559168",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 2,
       "name": "Austin",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -213,8 +214,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "mangerID": "1261458983793721344",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 3,
+      //"mangerID": "1261458983793721344",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 3,
       "name": "Reggie",
       "tookOver": 2023, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -237,8 +238,8 @@ export const managers = [
     },
     
     {
-      "mangerID": "998657206969114624",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 5,
+      //"mangerID": "998657206969114624",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 5,
       "name": "Matthew",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
@@ -260,8 +261,8 @@ export const managers = [
       "preferredContact": "Phone", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "mangerID": "1009714825649455104",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 11,
+      //"mangerID": "1009714825649455104",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 11,
       "name": "Jacob",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -283,8 +284,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "mangerID": "1144493657689837568",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      //"roster": 9,
+      //"mangerID": "1144493657689837568",  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "roster": 9,
       "name": "Fernando",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "San Antonio, TX", // (optional)
