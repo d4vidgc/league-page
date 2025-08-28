@@ -234,40 +234,7 @@
 	     }
 	   }
 
-   for (const yearRecords of records.regularSeasonData.seasonWeekRecords) {
-     for (let i = 0; i < 3; i++) {
-       const seasonPointsRecord = yearRecords.seasonPointsHighs[i];
-       if (
-         checkIfDeserves(
-           seasonPointsRecord.rosterID,
-           cRosterID,
-           yearRecords.year
-         )
-       ) {
-         const former = tookOver && tookOver > yearRecords.year;
-         if (former) {
-           formerGlobal = true;
-         }
-         displayAwards.push({
-           award: i + 1,
-           icon: "/awards/" + (i < 3 ? `record-${i + 1}` : "generic") + ".png",
-           type: `${yearRecords.year} Single Week Record`,
-           originalName: getTeamNameFromTeamManagers(
-             leagueTeamManagers,
-             cRosterID,
-             seasonPointsRecord.year
-           ),
-           year: null,
-           week: seasonPointsRecord.week,
-           extraInfo: seasonPointsRecord.fpts,
-           former,
-         });
-                }
-            }
-        }
-    }
-
-    $: computePodiums(rosterID);
+    // $: computePodiums(rosterID);
 
     const computeAward = (award) => {
         switch (award) {
